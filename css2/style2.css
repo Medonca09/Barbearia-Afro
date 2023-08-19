@@ -3,6 +3,7 @@
     padding:0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 
 
@@ -16,6 +17,10 @@
 
 }
 
+h1{
+    justify-content: center;
+    margin-bottom: 3rem;
+}
 
 header{
     height: 130px;
@@ -46,4 +51,25 @@ header{
 
 body {
     text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
+
+.container2{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.card{
+    justify-content: space-evenly;
+}
+
+.card-img-top{
+    height: 15rem;
 }
