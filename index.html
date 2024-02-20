@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>AfrosArt Cuts</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,13 +19,16 @@
       name="viewport"
       content="width=devide-width, initial-scale=1.0, maximum-scale=1.0"
     />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     
+    <title>AfrosArt Cuts</title>
   </head>
 
   <body>
     <div class="bg-home">
       <header>
         <nav class="header-content container">
-          <div class="header-icons">
+          <div class="header-icons" data-aos="fade-down">
             <a href="#">
               <i class="fa-brands fa-instagram fa-2x"></i>
             </a>
@@ -37,16 +40,16 @@
             </a>
           </div>
 
-          <div class="header-logo">
+          <div class="header-logo" data-aos="zoom-in" data-aos-delay="500">
             <img src="assests/logo.svg" alt="logo" />
           </div>
 
-          <div>
+          <div data-aos="fade-down">
             <a class="header-button" href="#"> Agendar horário </a>
           </div>
         </nav>
 
-        <main class="hero container">
+        <main class="hero container" data-aos="fade-up" data-aos-delay="400">
           <h1>ESTILO É UM REFLEXO DA SUA ATITUDE E SUA PERSONALIDADE.</h1>
           <p>Horário de funcionamento: 09:00 ás 19:00</p>
           <a href="#" class="button-contact" target="_blank">
@@ -58,14 +61,14 @@
 
     <section class="about">
       <div class="container about-content">
-        <div>
+        <div data-aos="zoom-in" data-aos-delay="100">
           <img
             src="assests/110719-RS-Barbeiro-da-favela11-1.webp"
             alt="Imagens sobre a barbearia"
           />
         </div>
 
-        <div class="about-description">
+        <div class="about-description" data-aos="zoom-out-left" data-aos-delay="250">
           <h2>Sobre</h2>
           <p>
             Bem-vindo à AfroArt Cut, onde cada corte é uma celebração da cultura
@@ -90,29 +93,57 @@
         </p>
       </div>
 
-      <section class="haircuts">
+      <section class="haircuts" data-aos="fade-up">
         <div class="haircut">
-          <img src="assests/nudred.jpg" alt="corte nudred" />
+          <img src="assests/barba.png" alt="corte nudred" />
           <div class="haircut-info">
             <strong>Cortes de cabelo</strong>
-            <button>R$ 30,00</button>
+            <a href="Menu.html">Ver cortes</a>
           </div>
         </div>
         <div class="haircut">
-            <img src="assests/barba.png" alt="corte nudred" />
+            <img src="assests/produtos.jpg" alt="produtos barbearia" style="height: 22rem; width: 22rem;">
             <div class="haircut-info">
-              <strong>Barba</strong>
-              <button>R$ 40,00</button>
+              <strong>Produtos</strong>
+              <a href="Sobre.html">Ver produtos</a>
             </div>
           </div>
           <div class="haircut">
-            <img src="assests/nudred.jpg" alt="corte nudred" />
+            <img src="assests/barba.png" alt="barbas" />
             <div class="haircut-info">
-              <strong>Cortes de cabelo</strong>
-              <button>R$ 30,00</button>
+              <strong>Tipo de barba</strong>
+              <a>R$ 30,00</a>
             </div>
           </div>
       </section>
     </section>
+
+    <div class="services">
+      <h2>Venha conhecer</h2>
+    </div>
+
+    <iframe width="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.2879952511707!2d-48.046585523968005!3d-15.841453784805559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a328bd8bc60c1%3A0xd082313d70393121!2sTaguatinga%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1708432117568!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <footer class="footer">
+      <div class="footer-icons">
+        <a href="#">
+          <i class="fa-brands fa-instagram fa-2x"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-facebook fa-2x"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-tiktok fa-2x"></i>
+        </a>
+      </div>
+
+      <div>
+        <img src="assests/logo.svg" alt="logo barbearia">
+      </div>
+
+      <p>Copyright 2023 | AfrosCut Art - Todos direitos reservados.</p>
+
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
